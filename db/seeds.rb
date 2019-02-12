@@ -6,4 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Meetings.create(name: "Tom")
+Meeting.create(:name => "Tom", :time => DateTime.strptime("09/14/2019 8:00", "%m/%d/%Y %H:%M"), :duration => 30, :price => 100)
