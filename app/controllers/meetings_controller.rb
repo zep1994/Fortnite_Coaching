@@ -1,6 +1,6 @@
 class MeetingsController < ApplicationController
 
     def index 
-        @meetings = Meeting.all 
+        render json: Meeting.all 
     end
 end
