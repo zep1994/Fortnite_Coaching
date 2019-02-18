@@ -4,8 +4,9 @@ import '../App.css';
 import Meetings from '../components/Meetings'
 import Coaches from '../components/Coaches'
 import Games from '../components/Games'
-import Home from '../components/Home'
+import Home from '../components/Home/Home'
 import NavBar from '../components/Navbar'
+import Footer from '../components/Footer';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <NavBar />
+          <Footer />
           <Route exact path="/" component={Home} />
           <Route exact path="/meetings" component={Meetings} />
           <Route exact path="/coaches" component={Coaches} />

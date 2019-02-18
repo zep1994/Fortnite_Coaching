@@ -1,29 +1,32 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import Main from './Main/Main';
+import { Link } from 'react-router-dom'
+
 
 const NavBar = () => {
     return (
         <div className="demo-big-content">
             <Layout>
-                <Header title="Coaching" scroll>
+            <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}}
+                 to="/">Coaching</Link>} scroll>
                     <Navigation>
-                        <NavLink to="/">Home</NavLink>
-                        <NavLink to="/meetings">Meetings</NavLink>
-                        <NavLink to="/coaches">Coaches</NavLink>
-                        <NavLink to="/games">Games</NavLink>
+                        <Link to="/">Home</Link>
+                        <Link to="/meetings">Meetings</Link>
+                        <Link to="/coaches">Coaches</Link>
+                        <Link to="/games">Games</Link>
                     </Navigation>
                 </Header>
                 <Drawer title="Coaching">
                     <Navigation>
-                        <NavLink to="/">Home</NavLink>
-                        <NavLink to="/meetings">Meetings</NavLink>
-                        <NavLink to="/coaches">Coaches</NavLink>
-                        <NavLink to="/games">Games</NavLink>
+                        <Link to="/">Home</Link>
+                        <Link to="/meetings">Meetings</Link>
+                        <Link to="/coaches">Coaches</Link>
+                        <Link to="/games">Games</Link>
                     </Navigation>
                 </Drawer>
                 <Content>
-                    <div className="page-content" />
+                    <Main />
                 </Content>
             </Layout>    
         </div>
