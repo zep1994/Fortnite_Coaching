@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  resources :meetings
+  namespace :api do 
+     resources :meetings
+  end
   root "meetings#index"
 end

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Coaches from '../Coaches';
-import Meetings from '../Meetings';
+import Meetings from '../../containers/Meetings/Meetings';
 import Games from '../Games';
 import Home from '../Home/Home';
 

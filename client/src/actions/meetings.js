@@ -1,17 +1,17 @@
-const API_URL = process.env.API_URL
+const API_URL = 'http://localhost:3001/api/meetings'
 
-export default setMeets = meets => {
+export const setMeets = meetings => {
     return {
         type: 'GET_MEETS',
-        meets
+        meetings
     }
 }
 
 export const getMeets = () => {
     return dispatch => {
-        return fetch(`${API_URL}/meetings`)
-        .then(response => response.json())
-        .then(meets => dispatch(setMeets(meets)))
+        return fetch(API_URL)
+        .then(res => res.json())
+        .then(meeting => dispatch(setMeets(meeting)))
         .catch(error => console.log(error))
     }
 }
