@@ -5,8 +5,7 @@ const MeetingCard = ({meeting}) => (
         <h3>{meeting.name}</h3>
         <p>{meeting.price}</p>
         <p>{meeting.time}</p>
-    </div>
-     
+    </div>   
 )
 
 export default MeetingCard

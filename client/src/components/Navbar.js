@@ -9,12 +9,15 @@ const NavBar = () => {
         <div className="demo-big-content">
             <Layout>
             <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}}
-                 to="/">Coaching</Link>} scroll>
+                to="/">Coaching</Link>} scroll>
                     <Navigation>
                         <Link to="/">Home</Link>
                         <Link to="/meetings">Meetings</Link>
                         <Link to="/coaches">Coaches</Link>
                         <Link to="/games">Games</Link>
+                        <Link to="/signup">Sign Up</Link>
+                        <Link to="/signin">Sign In</Link>
+                        <Link to="/signout">Sign Out</Link>
                     </Navigation>
                 </Header>
                 <Drawer title="Coaching">
@@ -23,6 +26,9 @@ const NavBar = () => {
                         <Link to="/meetings">Meetings</Link>
                         <Link to="/coaches">Coaches</Link>
                         <Link to="/games">Games</Link>
+                        <Link to="/signup">Sign Up</Link>
+                        <Link to="/signin">Sign In</Link>
+                        <Link to="/signout">Sign Out</Link>
                     </Navigation>
                 </Drawer>
                 <Content>

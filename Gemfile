@@ -19,7 +19,9 @@ gem 'rb-readline'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 gem 'rack-cors', require: 'rack/cors'
-
+gem 'devise-jwt'
+gem 'devise'
+gem 'dotenv-rails', groups: [:development, :test]
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'foreman'

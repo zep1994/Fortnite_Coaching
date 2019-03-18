@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import MeetingCard from '../../components/Meetings/MeetingCard'
 
 class Meetings extends React.Component {
-    
+
     render() {
         return (
             <div className="MeetingsContainer">

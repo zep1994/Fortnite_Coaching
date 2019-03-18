@@ -13,6 +13,9 @@ const Main = () => (
       < Route path = "/meetings"  component={ Meetings } />
       < Route path = "/coaches"  component={ Coaches } />
       < Route path = "/games"  component={ Games } />
+      < Route path = "/signup" component={ Home } />
+      < Route path = "/signin" component={ Home } />
+      < Route path = "/signout" component={ Home } />
    </Switch>
 )
 
