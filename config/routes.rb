@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   namespace :api do 
-     resources :meetings
+      resources :meetings
   end
   root "meetings#index"
 end

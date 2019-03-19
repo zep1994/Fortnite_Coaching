@@ -1,8 +1,8 @@
 import { AUTH_USER } from './types'
+import axios from 'axios'
 
-export const signup = ({ email, password }) => dispatch => {
-    return {
-        type: AUTH_USER,
-        dispatch
-    }
+const API_URL = 'http://localhost:3001/users/sign_up'
+
+export const signup = (formProps) => dispatch => {
+    axios.post(API_URL, formProps)
 }
