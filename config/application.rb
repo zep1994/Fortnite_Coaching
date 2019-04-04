@@ -19,6 +19,12 @@ Bundler.require(*Rails.groups)
 
 module FortniteCoaching
   class Application < Rails::Application
+
+    config.generators do |generate|
+      # DISABLE ASSET GENERATORS
+      generate.javascript_engine false
+      # more generator configs...
+    end
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
